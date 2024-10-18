@@ -59,7 +59,10 @@ The mean hard coral cover in Bermuda is `r (mean_Bermuda_coral_cover)`
 ## Explore Jamaica Ecoregion
 
 ```{r}
-### add information about Jamaica
+##| echo: false
+
+mean_Bermuda_coral_cover <- mean(bermuda_data$Hard_Coral_Cover)
+```
 ```
 
 use \$\$ for formulas
