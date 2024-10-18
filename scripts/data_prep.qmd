@@ -1,0 +1,73 @@
+---
+title: "Data Preparation"
+author: Tonya Macedo
+format: html
+---
+
+## Set up
+
+```{r}
+##| warning: false
+
+# ctl + alt + i to insert a chunk of code
+
+library(readr)
+library(dplyr)
+library(here)
+```
+
+## Import Data
+
+```{r}
+#| message: false
+
+all_data <- read_csv(here("data/All_Data.csv"))
+```
+
+## Explore Bermuda Ecoregion
+
+```{r}
+
+bermuda_data <- all_data %>%
+  filter(Ecoregion_Name == "Bermuda")
+
+```
+
+### View Distribution of coral cover in Bermuda
+
+```{r}
+##| eval: false
+hist(bermuda_data$Hard_Coral_Cover)
+```
+
+### Save figure as png
+
+```{r}
+png(filename = (here("plots/histogram_Bermuda_coral_cover.png")))
+```
+
+### Calculate mean coral cover
+
+```{r}
+##| echo: false
+
+mean_Bermuda_coral_cover <- mean(bermuda_data$Hard_Coral_Cover)
+```
+
+The mean hard coral cover in Bermuda is `r (mean_Bermuda_coral_cover)`
+
+## Explore Jamaica Ecoregion
+
+```{r}
+### add information about Jamaica
+```
+
+use \$\$ for formulas
+
+$$
+mean = \frac{term1 + term2 + term3...}{number of terms}
+$$
+
+$$
+Redfield Ratio = \frac{Nitrate}{Phosphate}
+$$
