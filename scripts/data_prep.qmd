@@ -62,6 +62,7 @@ The mean hard coral cover in Bermuda is `r (mean_Bermuda_coral_cover)`
 ##| echo: false
 
 mean_Bermuda_coral_cover <- mean(bermuda_data$Hard_Coral_Cover)
+ggg
 
 view(bermuda_data)
 ```

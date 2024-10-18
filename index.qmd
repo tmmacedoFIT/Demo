@@ -1,0 +1,14 @@
+---
+title: "GitHub pages"
+author: "T. Macedo"
+format: html
+---
+## Introduction
+
+## Data
+
+[Data Prepartion](scripts/data_prep.html)
+
+## Methods
+
+## Results
